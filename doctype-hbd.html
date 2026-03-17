@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HBD!_<3</title>
+</head>
+<style>
+
+body {
+margin:0;
+background:#BF5700;
+font-family:"Courier New", Consolas, monospace;
+}
+
+#container {
+position:relative;
+width:320px;
+height:240px;
+margin:80px auto;
+}
+
+#layer1 {
+position:absolute;
+width:160px;
+height:40px;
+left:80px;
+top:60px;
+background:#cfe8b0;
+border-radius:6px;
+}
+
+#layer2 {
+position:absolute;
+width:200px;
+height:50px;
+left:60px;
+top:95px;
+background:#f3e5c8;
+border-radius:6px;
+}
+
+#layer3 {
+position:absolute;
+width:240px;
+height:55px;
+left:40px;
+top:140px;
+background:#f3e5c8;
+border-top:12px solid #cfe8b0;
+border-radius:0 0 8px 8px;
+}
+
+.general {
+position:absolute;
+width:8px;
+height:30px;
+top:30px;
+background:#ffffff;
+}
+
+#c1 { left:130px; }
+#c2 { left:155px; }
+#c3 { left:180px; }
+
+.blah {
+position:absolute;
+width:10px;
+height:10px;
+background:orange;
+border-radius:50%;
+top:-8px;
+left:-1px;
+animation-name:flicker;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+}
+
+#c1 .blah {
+animation-duration:0.55s;
+animation-delay:0.1s;
+}
+
+#c2 .blah {
+animation-duration:0.72s;
+animation-delay:0.3s;
+}
+
+#c3 .blah {
+animation-duration:0.63s;
+animation-delay:0.2s;
+}
+
+@keyframes flicker {
+0% {
+transform:scale(0.9) translateY(0px);
+opacity:0.7;
+}
+50% {
+transform:scale(1.2) translateY(-2px);
+opacity:1;
+}
+100% {
+transform:scale(0.95) translateY(1px);
+opacity:0.8;
+}
+}
+
+.nothing {
+position:absolute;
+width:100%;
+text-align:center;
+top:210px;
+font-size:22px;
+font-weight:bold;
+color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="container">
+
+  <div id="layer1"></div>
+  <div id="layer2"></div>
+  <div id="layer3"></div>
+
+  <div class="general" id="c1"><div class="blah"></div></div>
+  <div class="general" id="c2"><div class="blah"></div></div>
+  <div class="general" id="c3"><div class="blah"></div></div>
+
+  <div class="nothing">HAPPY BIRTHDAY TRENT! <3 </div>
+
+</div>
+
+</body>
+</html>
+
+
